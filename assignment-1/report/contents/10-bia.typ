@@ -41,9 +41,10 @@
 
 #grid(
   columns: (1fr, 1fr),
-  rows: (2em, auto),
+  rows: (2em, 2em, auto),
   column-gutter: .5cm,
   align(right, [_Giảng viên hướng dẫn_:]), align(left, m.at("giảng viên")),
+  align(right, [_Nhóm_:]),                 align(left, m.at("tên nhóm")),
   align(right, [_Sinh viên thực hiện_:]) , align(left, for s in m.at("sinh viên") [
                                              #v(1em, weak: true)
                                              #s.at("mssv") - #s.at("tên")  

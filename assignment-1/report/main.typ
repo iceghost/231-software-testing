@@ -22,7 +22,12 @@
   underline(it)
 }
 
-#set heading(numbering: "1.1.1")
+#set heading(numbering: (..ls) => {
+  if ls.pos().len() == 1 {
+    return
+  }
+  numbering("1.", ..ls.pos().slice(1))
+})
 #show heading: it => {
   it
   v(.5em)
