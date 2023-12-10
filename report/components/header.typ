@@ -2,10 +2,7 @@
 
 #set text(font: m.at("fonts").at("monospace"), size: 10pt)
 #set par(leading: 0.75em)
-#show: block.with(
-  stroke: (bottom: 1pt),
-  inset: (bottom: 0.5em),
-)
+#show: block.with(stroke: (bottom: .25pt), inset: (bottom: 1em))
 #show: upper
 
 #locate(loc => [
@@ -14,8 +11,9 @@
     return
   }
 
-  #box(image("/components/logo.png", height: 2.5em))
-  #h(0.5cm)
+  #h(0.2cm)
+  #box(image("/components/logo.png", height: 2.2em))
+  #h(0.1cm)
   #box[
     Trường Đại học Bách Khoa - ĐHQG-HCM \
     Khoa Khoa học và Kỹ thuật Máy tính

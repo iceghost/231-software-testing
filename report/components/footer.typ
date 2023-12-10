@@ -2,7 +2,7 @@
 
 #set text(font: m.at("fonts").at("monospace"), size: 8pt)
 #show: block.with(
-  stroke: (top: 1pt),
+  stroke: (top: .25pt),
   inset: (top: 1em),
 )
 
