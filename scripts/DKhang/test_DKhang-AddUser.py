@@ -38,7 +38,7 @@ class TestAddUserValid(TestAddUser):
         self.driver.find_element(By.XPATH, "//div[2]/form/button").click()
         super().setup_method(method)
 
-    @pytest.mark.parametrize("extra", [False, True])
+    @pytest.mark.parametrize("extra", [False, True], ids=["without optional fields", "with optional fields"])
     def test_valid(self, extra):
         self.driver.find_element(By.ID, "id_username").send_keys("khangng")
         self.driver.find_element(By.CSS_SELECTOR, "em").click()
@@ -62,6 +62,7 @@ class TestAddUserInvalid(TestAddUser):
             ("siu!@$!@$!@$", "khangng@gmail.com", "Nguyen"),
             ("khangng", "khangng@gmail.com", ""),
         ],
+        ids=["invalid email", "invalid username", "missing lastname"]
     )
     def test_invalid(self, username, email, lastname):
         self.driver.find_element(By.ID, "id_username").send_keys(username)

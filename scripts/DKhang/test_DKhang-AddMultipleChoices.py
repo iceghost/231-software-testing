@@ -51,7 +51,7 @@ class TestValidrequireds:
         self.driver.find_element(By.CSS_SELECTOR, "html").click()
         element = self.driver.find_element(By.ID, "tinymce")
         self.driver.execute_script(
-            "if(arguments[0].contentEditable === 'true') {arguments[0].innerText = '<p>What is Black-box testing?</p>'}",
+            "if(arguments[0].contentEditable === 'true') {arguments[0].innerText = 'What is Black-box testing?'}",
             element,
         )
         self.driver.switch_to.default_content()
@@ -84,7 +84,7 @@ class TestValidrequireds:
             self.driver.find_element(By.CSS_SELECTOR, "p").click()
             element = self.driver.find_element(By.ID, "tinymce")
             self.driver.execute_script(
-                f"if(arguments[0].contentEditable === 'true') {{arguments[0].innerText = '<p>{text}</p>'}}",
+                f"if(arguments[0].contentEditable === 'true') {{arguments[0].innerText = '{text}'}}",
                 element,
             )
             self.driver.switch_to.default_content()
@@ -95,7 +95,7 @@ class TestValidrequireds:
         self.driver.find_element(By.ID, "id_submitbutton").click()
         assert (
             self.driver.find_element(By.CSS_SELECTOR, "span.questiontext").text
-            == "<p>What is Black-box testing?</p>"
+            == "What is Black-box testing?"
         )
 
     @pytest.mark.parametrize(
@@ -124,7 +124,7 @@ class TestValidrequireds:
             element = self.driver.find_element(By.ID, "tinymce")
             if text is not None:
                 self.driver.execute_script(
-                    f"if(arguments[0].contentEditable === 'true') {{arguments[0].innerText = '<p>{text}</p>'}}",
+                    f"if(arguments[0].contentEditable === 'true') {{arguments[0].innerText = '{text}'}}",
                     element,
                 )
             self.driver.switch_to.default_content()
