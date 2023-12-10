@@ -121,7 +121,7 @@ def is_element_clickable(xpath):
 
 path = "./BinhKhang.xlsx"
 
-rows = XLUtils.getRowCount(path, 'UploadAssignmentUsecase')
+rows = XLUtils.getRowCount(path, 'FilePlugin(teacher)')
 
 for r in range(2, rows+1):
     file_path = XLUtils.readData(path, 'FilePlugin(teacher)', r, 2)
@@ -152,7 +152,7 @@ for r in range(2, rows+1):
     driver.find_element(By.ID, "id_name").send_keys(Keys.ENTER)
     
     
-    time.sleep(2)
+    time.sleep(3)
     driver.find_element(By.CSS_SELECTOR, ".dndupload-message .fa").click()
     driver.find_element(By.XPATH, "//a[contains(.,\'Upload a file\')]").click()
     
@@ -164,10 +164,11 @@ for r in range(2, rows+1):
    
     # # driver.find_element(By.NAME, "\"repo_upload_file\"").click()
     # # driver.find_element(By.NAME, "\"repo_upload_file\"").send_keys("C:\\fakepart\\1_Byte.txt")
+    driver.find_element(By.ID, "id_submitbutton").click()
 
     if is_element_clickable(driver.find_element(By.ID, "id_submitbutton")):
       driver.find_element(By.ID, "id_submitbutton").click()
-      XLUtils.writeData(path, 'UploadAssignmentUsecase', r, 3, "PASSED")
+      XLUtils.writeData(path, 'FilePlugin(teacher)', r, 3, "PASSED")
     else:
-      XLUtils.writeData(path, 'UploadAssignmentUsecase', r, 3, "FAILED")
+      XLUtils.writeData(path, 'FilePlugin(teacher)', r, 3, "FAILED")
    
