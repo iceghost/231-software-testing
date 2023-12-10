@@ -164,7 +164,6 @@ for r in range(2, rows+1):
    
     # # driver.find_element(By.NAME, "\"repo_upload_file\"").click()
     # # driver.find_element(By.NAME, "\"repo_upload_file\"").send_keys("C:\\fakepart\\1_Byte.txt")
-    driver.find_element(By.ID, "id_submitbutton").click()
 
     if is_element_clickable(driver.find_element(By.ID, "id_submitbutton")):
       driver.find_element(By.ID, "id_submitbutton").click()
