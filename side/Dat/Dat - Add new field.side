@@ -1,0 +1,532 @@
+{
+  "id": "134bbb63-fbf3-4f6e-8082-c793dc336fc8",
+  "version": "2.0",
+  "name": "Dat - Add new field",
+  "url": "https://school.moodledemo.net",
+  "tests": [{
+    "id": "aed38be3-2f7b-4922-922c-11be3d74e59f",
+    "name": "Wrong Email address format",
+    "commands": [{
+      "id": "6939cbf5-96bd-4118-a270-5a5b91d7bac8",
+      "comment": "",
+      "command": "open",
+      "target": "/admin/search.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ac04d27-1a26-4c37-b309-fa13121483c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x764",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "474dd490-c488-4e73-8153-a35066c4f174",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Users",
+      "targets": [
+        ["linkText=Users", "linkText"],
+        ["css=#moremenu-656eafc12faeb-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Users')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656eafc12faeb-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#linkusers')]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce840f51-192b-4674-8ac9-8fdd7b466410",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add a new user",
+      "targets": [
+        ["linkText=Add a new user", "linkText"],
+        ["css=#linkusers .row:nth-child(3) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Add a new user')]", "xpath:link"],
+        ["xpath=//div[@id='linkusers']/div/div[2]/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/editadvanced.php?id=-1')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add a new user')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed1b094f-cf87-455f-8d35-90a0d7d7ae87",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701752832872_454']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7c0f2e7-142b-46ad-8572-468f6593513c",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701752832872_454']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Terry"
+    }, {
+      "id": "3ae3bd85-5e30-4da2-b7a2-2f74f0383b62",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701752832872_460']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88e8724b-c029-4b96-a436-6798b07ae579",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701752832872_460']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Jom"
+    }, {
+      "id": "1bf653e9-ecca-425d-b1a0-fc81eb3faedb",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701752832872_464']/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7f5d5f6-fd18-41cd-a05f-0db243590c1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701752832872_464']/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Terry@Jom"
+    }, {
+      "id": "2bea403d-ebe3-4597-a652-2a1154dac090",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701752832872_470']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3589e82b-565e-4aed-a8f8-a91e14b1e710",
+    "name": "Missing Username ",
+    "commands": [{
+      "id": "089f986c-ac32-4257-a58d-72b5b2d4d5ff",
+      "comment": "",
+      "command": "open",
+      "target": "/admin/search.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c5b64fd-9a35-4f65-b084-0b7c34eb2a20",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x763",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba2932b6-ae72-4a9a-976c-19bbaca77084",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Users",
+      "targets": [
+        ["linkText=Users", "linkText"],
+        ["css=#moremenu-656eb0e7f115b-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Users')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656eb0e7f115b-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#linkusers')]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d615d7c-695c-456a-99c8-3ac9e9935206",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add a new user",
+      "targets": [
+        ["linkText=Add a new user", "linkText"],
+        ["css=#linkusers .row:nth-child(3) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Add a new user')]", "xpath:link"],
+        ["xpath=//div[@id='linkusers']/div/div[2]/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/editadvanced.php?id=-1')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add a new user')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60c1e31e-4e25-4fef-90ab-e52911a75689",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753093945_454']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c3ff4ad-7146-4c9d-a3a9-9fc90524cbec",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753093945_454']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Tom"
+    }, {
+      "id": "9f98114b-111c-4d1c-8821-a9a3ec60af9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753093945_460']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "665219c1-5b1c-42a8-bbe5-173c6b5a565e",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753093945_460']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Jerry"
+    }, {
+      "id": "f3d1208b-4a58-4171-ad9c-460f72f9bac5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753093945_464']/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cffd8f7-4cc6-4319-a87d-83709af4cfbb",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753093945_464']/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Tom@Jerry.cartoon"
+    }, {
+      "id": "938c4bea-8e57-4e0e-9e00-83038bb01a53",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701753093945_490']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "aac0870e-2caa-4a00-b97a-a785c9a41f5b",
+    "name": "Add successfully",
+    "commands": [{
+      "id": "9a6d6094-1524-4970-aac3-2da24132b9a4",
+      "comment": "",
+      "command": "open",
+      "target": "/admin/search.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03f1fb98-ecd9-4668-88ab-7c61376dedbb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "975x764",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d01c9d75-98f5-4eb0-9980-ad70758251ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Users",
+      "targets": [
+        ["linkText=Users", "linkText"],
+        ["css=#moremenu-656eb2082b991-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Users')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656eb2082b991-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#linkusers')]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6af134e-1eb1-4b40-9b21-0f60971f256c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add a new user",
+      "targets": [
+        ["linkText=Add a new user", "linkText"],
+        ["css=#linkusers .row:nth-child(3) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Add a new user')]", "xpath:link"],
+        ["xpath=//div[@id='linkusers']/div/div[2]/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/editadvanced.php?id=-1')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add a new user')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6a49676-3c5b-48d9-87a3-9b48079e2d5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_454']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56222b31-ac7f-4c83-b9df-1b8aa568e3e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_454']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "jomterry"
+    }, {
+      "id": "1eb4204e-89bf-43dd-8e77-b5d282c3ba37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4) > .col-md-9 label",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .col-md-9 label", "css:finder"],
+        ["xpath=//div[@id='id_moodlecontainer']/div[4]/div[2]/div/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Generate password and notify user')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eefdf7a-ceca-46d6-849b-3058b1a6c155",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_createpassword",
+      "targets": [
+        ["id=id_createpassword", "id"],
+        ["name=createpassword", "name"],
+        ["css=#id_createpassword", "css:finder"],
+        ["xpath=//input[@id='id_createpassword']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_459']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59c5a325-8e7d-4b8a-9eaa-7872f4619a8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=em",
+      "targets": [
+        ["css=em", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701753373009_479']/span/span/em", "xpath:idRelative"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'Click to enter text')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1c95faa-11f1-4e16-95f9-d01c9ce0430d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_486']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7baf4d6f-e910-40c5-9aa2-3f2f89c5d69b",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_486']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Terry"
+    }, {
+      "id": "acebb524-926a-41a5-9764-39a3c97aa0ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_490']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a3a86f8-d2ab-41f1-963d-cc3821afe546",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_490']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Jom"
+    }, {
+      "id": "11a0fd44-4f09-413d-86a5-7bb799aa3afa",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_494']/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "269df966-eb0a-4898-b5ba-6a114867b28f",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701753373009_494']/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Terry@Jom.cartoon"
+    }, {
+      "id": "214e5cdd-05bf-46be-8285-2bb7ff85a8e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fitem_id_maildisplay > .col-md-9",
+      "targets": [
+        ["css=#fitem_id_maildisplay > .col-md-9", "css:finder"],
+        ["xpath=//div[@id='fitem_id_maildisplay']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4dca451-bfb5-4859-8c8b-7757743a35b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701753373009_502']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bcae2dab-6725-4d8d-967e-97f3dd3b1f3e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aed38be3-2f7b-4922-922c-11be3d74e59f"]
+  }],
+  "urls": ["https://school.moodledemo.net/"],
+  "plugins": []
+}

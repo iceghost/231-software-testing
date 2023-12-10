@@ -1,0 +1,765 @@
+{
+  "id": "50138ec7-4156-46e1-8cc6-d3f26ca74a68",
+  "version": "2.0",
+  "name": "Dat - Edit profile ",
+  "url": "https://school.moodledemo.net/",
+  "tests": [{
+    "id": "958f226f-bd20-44ff-b8a1-039f72c1823f",
+    "name": "Missing Firstname",
+    "commands": [{
+      "id": "26f730cd-10e4-41e2-89a8-096241414d43",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net/user/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "981024b1-f7da-432d-be57-eccd89e8dc3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x763",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c000b09-b704-4d68-ad9e-68a0a95abbcb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit profile",
+      "targets": [
+        ["linkText=Edit profile", "linkText"],
+        ["css=.editprofile a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit profile')]", "xpath:link"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748374858_142']/div[2]/section/div/ul/li/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/editadvanced.php?id=20&course=1&returnto=profile')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e0031d4-1afb-4780-a8f0-da745a6c34d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748381195_593']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c02c750d-a72b-4334-a9c0-e3f1932e5eb5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748381195_593']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51bb3ccf-fc7b-49c1-a58f-cb482f7b8640",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748381195_593']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8565951c-d842-41a8-98d9-c61e4597bb96",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748381195_593']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "833fcc6c-18b1-4bca-acdc-c22d69eb9460",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fitem_id_imagealt > .col-md-9",
+      "targets": [
+        ["css=#fitem_id_imagealt > .col-md-9", "css:finder"],
+        ["xpath=//div[@id='fitem_id_imagealt']/div[2]", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/div[2]/div[4]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffea7913-003e-437d-b556-91d627863821",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701748381195_618']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "95cfc9f5-3e9f-4139-ab0f-b0186bdab477",
+    "name": "Missng Lastname",
+    "commands": [{
+      "id": "948ad376-986a-475e-8ae1-de65d3628610",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net/user/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a601d9c-a8e3-4112-91f4-4eea79d669ff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x763",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5681454-d717-485d-a8f4-c17360a984e2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit profile",
+      "targets": [
+        ["linkText=Edit profile", "linkText"],
+        ["css=.editprofile a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit profile')]", "xpath:link"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748716486_142']/div[2]/section/div/ul/li/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/editadvanced.php?id=20&course=1&returnto=profile')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98816dbf-6791-4fb6-a927-794e2bd50996",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748727024_585']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1b9a8a4-7f9d-4e4e-a3cb-b6b0d2646ef0",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748727024_585']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5679f80-937d-4d92-9f55-bc2a416aa0e7",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748727024_585']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81c542f0-62a0-43ba-9948-235a472d9e5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748727024_585']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Terry"
+    }, {
+      "id": "b88bb246-77e4-4558-9018-c6021446da03",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_moodlecontainer",
+      "targets": [
+        ["id=id_moodlecontainer", "id"],
+        ["css=#id_moodlecontainer", "css:finder"],
+        ["xpath=//div[@id='id_moodlecontainer']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='id_moodle']/div[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67a023e1-9320-4083-94ad-b3be6e98f363",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748727024_589']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab3aa394-08ea-4701-b670-de15ced7b4e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748727024_589']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60982971-bbfe-4e0d-bfa5-c464e6f7ca60",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748727024_589']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bdbf4e9-d746-4ffc-bc63-adb3a85e6b15",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701748727024_589']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9a960c7-ed90-4b67-b83e-7531ae171d56",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#fitem_id_maildisplay > .col-md-9",
+      "targets": [
+        ["css=#fitem_id_maildisplay > .col-md-9", "css:finder"],
+        ["xpath=//div[@id='fitem_id_maildisplay']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb9665ca-db00-4ea7-8474-46a63b4ed75c",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=id_moodlecontainer",
+      "targets": [
+        ["id=id_moodlecontainer", "id"],
+        ["css=#id_moodlecontainer", "css:finder"],
+        ["xpath=//div[@id='id_moodlecontainer']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='id_moodle']/div[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c732cc44-9094-40ab-9165-70939ef41e3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_moodlecontainer",
+      "targets": [
+        ["id=id_moodlecontainer", "id"],
+        ["css=#id_moodlecontainer", "css:finder"],
+        ["xpath=//div[@id='id_moodlecontainer']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='id_moodle']/div[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3e18d8-0782-4c75-9771-23210d044c42",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701748727024_602']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9a6a0f1f-2fd9-4687-bbf0-2f2ee8ff700c",
+    "name": "Missing Email address",
+    "commands": [{
+      "id": "25796e3b-c3c6-4418-80e3-367c2afdb5dc",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net/user/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba249774-3ffb-43de-a536-fc534d3ded9a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x763",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb0a1509-13c7-4d67-a0c4-310e797c5756",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit profile",
+      "targets": [
+        ["linkText=Edit profile", "linkText"],
+        ["css=.editprofile a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit profile')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div/div/div[2]/section/div/ul/li/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/editadvanced.php?id=20&course=1&returnto=profile')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5031d3c3-9140-475a-a1a2-f7d465496679",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,106.59561920166016)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15ee547d-75ad-451a-9f9a-2ca745c76060",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,575.280029296875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fddf1c7b-36ef-45ce-af29-de34cbef38a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701749554810_457']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "721cdac7-4cb2-438b-892d-2a0c1adaa48e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fitem_id_email > .col-md-9",
+      "targets": [
+        ["css=#fitem_id_email > .col-md-9", "css:finder"],
+        ["xpath=//div[@id='fitem_id_email']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "379f6a7a-c887-48f6-b1fb-393c6cdaa8b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701749554810_463']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45c61a62-2a4a-42e0-9d5d-a73659413189",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701749554810_463']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Jom"
+    }, {
+      "id": "9a4a43fc-6829-42c0-97d9-d7b26e70dd96",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701749554810_459']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31372b91-e29e-40b6-a108-5c775c31c0fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701749554810_459']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c9a66a1-c515-4cdc-9530-c72eb96f85fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=yui_3_18_1_1_1701749554810_463",
+      "targets": [
+        ["id=yui_3_18_1_1_1701749554810_463", "id"],
+        ["css=#yui_3_18_1_1_1701749554810_463", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701749554810_463']", "xpath:attributes"],
+        ["xpath=//div[@id='fitem_id_lastname']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6470145-ccd5-4c55-8084-d298619b839e",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701749554810_471']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "acd566e2-8e61-48bd-ad9d-d63d4bea9f75",
+    "name": "Wrong Email address format",
+    "commands": [{
+      "id": "6c9b0300-ba8f-4138-bc3d-99f86c76c94e",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net/user/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce547c7d-1504-493e-92bd-d464b3cb2120",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x763",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5db3d7af-b3ea-4d5c-9b0c-17899610e194",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit profile",
+      "targets": [
+        ["linkText=Edit profile", "linkText"],
+        ["css=.editprofile a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit profile')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div/div/div[2]/section/div/ul/li/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/editadvanced.php?id=20&course=1&returnto=profile')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc1a00b9-52b6-4f2d-9185-0385c3ff8828",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750380646_457']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b47e2b1d-001c-49ae-b82e-930314a10a21",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750380646_461']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86723101-40a8-47af-8441-b8d0a6e540ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750380646_461']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Jom"
+    }, {
+      "id": "39c91191-43c0-4f01-b0e1-3cdeb8b5b662",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750380646_465']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e78ac6-3234-437b-b94f-fcfe47f9d2ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750380646_465']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Terry@Jom"
+    }, {
+      "id": "06f0e020-f208-4a77-8fe7-360062e0782a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fitem_id_moodlenetprofile > .col-md-9",
+      "targets": [
+        ["css=#fitem_id_moodlenetprofile > .col-md-9", "css:finder"],
+        ["xpath=//div[@id='fitem_id_moodlenetprofile']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87fb5a4c-9647-4be0-ab98-071d2301ba70",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701750380646_473']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1786ead6-0cae-4e3f-a101-728c50c9bd61",
+    "name": "Edit successfully",
+    "commands": [{
+      "id": "689bc066-77e5-4092-a506-74af944749ad",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net/user/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05e9b3e9-87df-4f63-a746-3edfadd6114a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "975x764",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca948da8-ff62-4f56-aaaa-892234aedf79",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit profile",
+      "targets": [
+        ["linkText=Edit profile", "linkText"],
+        ["css=.editprofile a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit profile')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div/div/div[2]/section/div/ul/li/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/editadvanced.php?id=20&course=1&returnto=profile')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fe515f4-86cc-4d7e-bf2a-484d4e1c19e0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,14.716926574707031)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b566bd8-07ee-443d-873d-8876c9e46a57",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,269.1599426269531)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5f6bcfd-69b1-48e8-a05c-73f2e62b9d8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_firstname",
+      "targets": [
+        ["id=id_firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#id_firstname", "css:finder"],
+        ["xpath=//input[@id='id_firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750495908_457']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c61845e0-e0d7-4700-97f2-9a338ab0ee72",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750495908_461']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d836e84-16ff-4e85-b8cd-9ab65651ea5f",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_lastname",
+      "targets": [
+        ["id=id_lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#id_lastname", "css:finder"],
+        ["xpath=//input[@id='id_lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750495908_461']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Jom"
+    }, {
+      "id": "663183f8-727c-48a3-ac15-97cf5e9d8b5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750495908_465']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2808b6d-90d6-46a6-9f42-269e9cf413c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_email",
+      "targets": [
+        ["id=id_email", "id"],
+        ["name=email", "name"],
+        ["css=#id_email", "css:finder"],
+        ["xpath=//input[@id='id_email']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701750495908_465']/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Terr@Jom.cartoon"
+    }, {
+      "id": "d5a22a6e-f730-4662-bb9e-c6b4d1350be4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fitem_id_moodlenetprofile > .col-md-9",
+      "targets": [
+        ["css=#fitem_id_moodlenetprofile > .col-md-9", "css:finder"],
+        ["xpath=//div[@id='fitem_id_moodlenetprofile']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f071552e-c80b-4bac-8183-32d2b561a248",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701750495908_473']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5e9757c0-6f42-4e4f-be78-d8a64064c6cd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["958f226f-bd20-44ff-b8a1-039f72c1823f"]
+  }],
+  "urls": ["https://school.moodledemo.net/"],
+  "plugins": []
+}

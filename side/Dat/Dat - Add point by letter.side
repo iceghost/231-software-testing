@@ -1,0 +1,355 @@
+{
+  "id": "5987caa4-1506-4f18-b384-6294cce0af4a",
+  "version": "2.0",
+  "name": "Dat - Add point by letter",
+  "url": "https://school.moodledemo.net",
+  "tests": [{
+    "id": "3ef6441f-8491-4e30-ab57-1949623b0ff3",
+    "name": "Input wrong type of point",
+    "commands": [{
+      "id": "689c4d02-00cd-4d3f-99ae-1f66e093666a",
+      "comment": "",
+      "command": "open",
+      "target": "/grade/edit/letter/index.php?id=269",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "775c0926-3327-42e3-a23a-d7b5ccd974ff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x763",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c5482b7-36fa-4975-b653-5e64b5cf3c3a",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button656e93a2973aa28",
+      "targets": [
+        ["id=single_button656e93a2973aa28", "id"],
+        ["css=#single_button656e93a2973aa28", "css:finder"],
+        ["xpath=//button[@id='single_button656e93a2973aa28']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb26d052-3df9-4e5c-95fb-50918e18b027",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gradeentryadd",
+      "targets": [
+        ["id=id_gradeentryadd", "id"],
+        ["name=gradeentryadd", "name"],
+        ["css=#id_gradeentryadd", "css:finder"],
+        ["xpath=//input[@id='id_gradeentryadd']", "xpath:attributes"],
+        ["xpath=//div[@id='fitem_id_gradeentryadd']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8204939-5935-4b52-a8bf-bdffe91b6cf5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,42.95832443237305)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa189bcd-d662-4727-acac-dd0e7d02ed52",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gradeletter_11",
+      "targets": [
+        ["id=id_gradeletter_11", "id"],
+        ["name=gradeletter[11]", "name"],
+        ["css=#id_gradeletter_11", "css:finder"],
+        ["xpath=//input[@id='id_gradeletter_11']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_gradeentry_11']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9930a49-7da3-4f7a-91fd-945c3c23b1a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_gradeletter_11",
+      "targets": [
+        ["id=id_gradeletter_11", "id"],
+        ["name=gradeletter[11]", "name"],
+        ["css=#id_gradeletter_11", "css:finder"],
+        ["xpath=//input[@id='id_gradeletter_11']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701745580378_165']/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": "A"
+    }, {
+      "id": "7064656f-5198-44fb-b5ec-25474508dd91",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gradeboundary_11",
+      "targets": [
+        ["id=id_gradeboundary_11", "id"],
+        ["name=gradeboundary[11]", "name"],
+        ["css=#id_gradeboundary_11", "css:finder"],
+        ["xpath=//input[@id='id_gradeboundary_11']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701745580378_167']/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/fieldset/div/div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73beb9fc-4be0-4a09-a625-36d49caa1d7e",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_gradeboundary_11",
+      "targets": [
+        ["id=id_gradeboundary_11", "id"],
+        ["name=gradeboundary[11]", "name"],
+        ["css=#id_gradeboundary_11", "css:finder"],
+        ["xpath=//input[@id='id_gradeboundary_11']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701745580378_171']/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/fieldset/div/div[2]/span/input", "xpath:position"]
+      ],
+      "value": "50ss"
+    }, {
+      "id": "a899f591-7ab0-453b-9923-5c57e314f238",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fitem_id_gradeentryadd > .col-md-9",
+      "targets": [
+        ["css=#fitem_id_gradeentryadd > .col-md-9", "css:finder"],
+        ["xpath=//div[@id='fitem_id_gradeentryadd']/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fd22b46-5f62-4ef6-ba75-2f9c115a9f25",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "eafb48cf-9f70-4a31-a03d-29013be52820",
+    "name": "Add without letter ",
+    "commands": [{
+      "id": "bc47215e-ac34-4070-9a8e-7befd63130eb",
+      "comment": "",
+      "command": "open",
+      "target": "/grade/edit/letter/index.php?id=269",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ce070df-85bb-4a3a-8dc0-7ed19f245dea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x764",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79d8e991-9e18-4e9c-ae45-0bc45b49e86d",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button656e8fed72b4c28",
+      "targets": [
+        ["id=single_button656e8fed72b4c28", "id"],
+        ["css=#single_button656e8fed72b4c28", "css:finder"],
+        ["xpath=//button[@id='single_button656e8fed72b4c28']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f755da-46c8-46e0-8823-8e8eef88a5ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gradeentryadd",
+      "targets": [
+        ["id=id_gradeentryadd", "id"],
+        ["name=gradeentryadd", "name"],
+        ["css=#id_gradeentryadd", "css:finder"],
+        ["xpath=//input[@id='id_gradeentryadd']", "xpath:attributes"],
+        ["xpath=//div[@id='fitem_id_gradeentryadd']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7501065-17f1-4fd1-a26a-24b0b8e6a8bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gradeboundary_10",
+      "targets": [
+        ["id=id_gradeboundary_10", "id"],
+        ["name=gradeboundary[10]", "name"],
+        ["css=#id_gradeboundary_10", "css:finder"],
+        ["xpath=//input[@id='id_gradeboundary_10']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_gradeentry_10']/div[2]/fieldset/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div[2]/fieldset/div/div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee2f4faf-d0d7-48a3-9428-31e10f908918",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_gradeboundary_10",
+      "targets": [
+        ["id=id_gradeboundary_10", "id"],
+        ["name=gradeboundary[10]", "name"],
+        ["css=#id_gradeboundary_10", "css:finder"],
+        ["xpath=//input[@id='id_gradeboundary_10']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701744631226_159']/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div[2]/fieldset/div/div[2]/span/input", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "a1131099-bdd3-4f46-b390-d73cf577fd24",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "630949d1-49c7-4427-ad3a-90cfdc482a57",
+    "name": "Input wrong type of point 2",
+    "commands": [{
+      "id": "7f55ae41-4e21-4ff5-9e8a-c1164a42396a",
+      "comment": "",
+      "command": "open",
+      "target": "/grade/edit/letter/index.php?id=269",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1f5e471-8d06-4971-8a23-be26efebced2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x764",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b581f2d-91e0-4c80-a171-aa9dfa304289",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button656e94012317028",
+      "targets": [
+        ["id=single_button656e94012317028", "id"],
+        ["css=#single_button656e94012317028", "css:finder"],
+        ["xpath=//button[@id='single_button656e94012317028']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82b822fd-9767-4251-bcc4-70ca7a6b03f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gradeentryadd",
+      "targets": [
+        ["id=id_gradeentryadd", "id"],
+        ["name=gradeentryadd", "name"],
+        ["css=#id_gradeentryadd", "css:finder"],
+        ["xpath=//input[@id='id_gradeentryadd']", "xpath:attributes"],
+        ["xpath=//div[@id='fitem_id_gradeentryadd']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78b0c444-578f-4d1e-9383-dcb4090a6220",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gradeletter_11",
+      "targets": [
+        ["id=id_gradeletter_11", "id"],
+        ["name=gradeletter[11]", "name"],
+        ["css=#id_gradeletter_11", "css:finder"],
+        ["xpath=//input[@id='id_gradeletter_11']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_gradeentry_11']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c742430c-2dfa-4724-b2f1-352d6a25c1a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_gradeletter_11",
+      "targets": [
+        ["id=id_gradeletter_11", "id"],
+        ["name=gradeletter[11]", "name"],
+        ["css=#id_gradeletter_11", "css:finder"],
+        ["xpath=//input[@id='id_gradeletter_11']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701745693528_165']/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": "A"
+    }, {
+      "id": "0a776c9b-c155-40da-8d68-d998542cc309",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_gradeboundary_11",
+      "targets": [
+        ["id=id_gradeboundary_11", "id"],
+        ["name=gradeboundary[11]", "name"],
+        ["css=#id_gradeboundary_11", "css:finder"],
+        ["xpath=//input[@id='id_gradeboundary_11']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701745693528_167']/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/fieldset/div/div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5319e2c9-435d-45aa-aabb-88a9d0c9c843",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_gradeboundary_11",
+      "targets": [
+        ["id=id_gradeboundary_11", "id"],
+        ["name=gradeboundary[11]", "name"],
+        ["css=#id_gradeboundary_11", "css:finder"],
+        ["xpath=//input[@id='id_gradeboundary_11']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701745693528_171']/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/fieldset/div/div[2]/span/input", "xpath:position"]
+      ],
+      "value": "50abc"
+    }, {
+      "id": "a9739101-0a67-4d18-9c5a-b9a38decf3ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//form/div[3]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "882da8f9-929f-4d42-a673-2a9cebadc092",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3ef6441f-8491-4e30-ab57-1949623b0ff3"]
+  }],
+  "urls": ["https://school.moodledemo.net/"],
+  "plugins": []
+}
