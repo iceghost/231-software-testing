@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Watch main.typ",
+            "command": "typst",
+            "args": ["watch", "main.typ"],
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "runOptions": {
+                "runOn": "folderOpen",
+                "instanceLimit": 1,
+            }
+        }
+    ]
+}
