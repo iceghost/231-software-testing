@@ -1,0 +1,431 @@
+{
+  "id": "363e5c4c-3c58-4118-9621-acb7fb5c1931",
+  "version": "2.0",
+  "name": "Create-Quiz-Equivalence",
+  "url": "https://sandbox.moodledemo.net",
+  "tests": [{
+    "id": "e2370ee3-f001-4196-a1e3-aeb38cf97fad",
+    "name": "Testcase1 - Time limit là số",
+    "commands": [{
+      "id": "ebf096d9-6b8b-4075-8f50-31ecf506e876",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abf945b0-3bce-4549-9c4f-311949c508ce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1f55359-3359-46d3-a235-00185326b12d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.cookie.split(\";\").forEach(function(c) { document.cookie = c.replace(/^ +/, \"\").replace(/=.*/, \"=;expires=\" + new Date().toUTCString() + \";path=/\"); });",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7598c6ed-00da-4ab3-8d58-bcbe1a5972bc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be5993be-fd29-4e22-b93c-cd80e2af7c57",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfc6581a-2abb-4fb1-bac5-8685438248c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "teacher"
+    }, {
+      "id": "22fdb318-6857-4b70-9399-ea143fd8d12a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sandbox"
+    }, {
+      "id": "0144da05-437d-4866-adf9-edb963bea631",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "474eaa45-0f71-4cb7-8f87-e549ba088f99",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My courses",
+      "targets": [
+        ["linkText=My courses", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'My courses')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f5908d33e1-navbar-nav']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox.moodledemo.net/my/courses.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a67534b-9241-49d0-8bd6-f7e62c688a1e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["css=#course-info-container-2-3 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-2-3']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d056cd8-9120-4418-aff1-07cdb9699142",
+      "comment": "",
+      "command": "click",
+      "target": "name=setmode",
+      "targets": [
+        ["id=656f59194cac9656f5919372a28-editingswitch", "id"],
+        ["name=setmode", "name"],
+        ["css=#\\36 56f59194cac9656f5919372a28-editingswitch", "css:finder"],
+        ["xpath=//input[@id='656f59194cac9656f5919372a28-editingswitch']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7fd3455-4f18-43d3-983a-8aa1d31b8923",
+      "comment": "",
+      "command": "click",
+      "target": "css=#coursecontentcollapse0 .activity-add-text",
+      "targets": [
+        ["css=#coursecontentcollapse0 .activity-add-text", "css:finder"],
+        ["xpath=//div[@id='coursecontentcollapse0']/button/span[2]", "xpath:idRelative"],
+        ["xpath=//li/div[2]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Add an activity or resource')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f928a9b-e89a-4f63-8d66-a6df852217d7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quiz",
+      "targets": [
+        ["css=.option:nth-child(15) .optionname", "css:finder"],
+        ["xpath=//div[@id='all-7']/div/div[15]/div/a/div[2]", "xpath:idRelative"],
+        ["xpath=//div[15]/div/a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0f45699-028e-4bbf-9ab6-227777629009",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701796129146_248']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Quiz 1"
+    }, {
+      "id": "965c2d36-1dd1-4397-861e-dc04e83f9c9a",
+      "comment": "",
+      "command": "click",
+      "target": "id=collapseElement-1",
+      "targets": [
+        ["id=collapseElement-1", "id"],
+        ["linkText=Timing", "linkText"],
+        ["css=#collapseElement-1", "css:finder"],
+        ["xpath=//a[@id='collapseElement-1']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701796129146_1409']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#id_timingcontainer')]", "xpath:href"],
+        ["xpath=//fieldset[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Timing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3b6b38b-98ee-4af7-b68d-ac6b6422e1f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fitem_id_timelimit .form-check",
+      "targets": [
+        ["css=#fitem_id_timelimit .form-check", "css:finder"],
+        ["xpath=//div[@id='fitem_id_timelimit']/div[2]/fieldset/div/label", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/fieldset/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d569e4c3-1e4e-40ed-a9c2-a6aebadb7c25",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_timelimit_number",
+      "targets": [],
+      "value": "15"
+    }, {
+      "id": "76381769-5cb8-4537-a862-e27dcf53e474",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton2",
+      "targets": [
+        ["id=id_submitbutton2", "id"],
+        ["name=submitbutton2", "name"],
+        ["css=#id_submitbutton2", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton2']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701796129146_1431']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b00fe61f-ebe1-431f-a409-9bcd00c8dc09",
+    "name": "Testcase2 - Time limit không phải số",
+    "commands": [{
+      "id": "9152e25f-7bb3-40b2-b32c-da8cba8f3a9d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d0cee0d-69f2-45c3-b983-ba02549a206e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "100ad95d-4e93-408d-919d-8105531e2c5f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.cookie.split(\";\").forEach(function(c) { document.cookie = c.replace(/^ +/, \"\").replace(/=.*/, \"=;expires=\" + new Date().toUTCString() + \";path=/\"); });",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98e000bd-73da-4e35-bcc6-c59fb444640b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a547a473-faea-4c61-b992-39b834961996",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e81b5b27-cd67-4e24-9eff-a9a81ed47532",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "teacher"
+    }, {
+      "id": "59b39465-98cd-4c32-8a43-f25cd3522ea2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sandbox"
+    }, {
+      "id": "207a1bf0-86c1-4d6d-a9f6-794d4514a4e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fa966d3-22a4-40a5-a14e-c7ca06d4af8d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My courses",
+      "targets": [
+        ["linkText=My courses", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'My courses')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f5908d33e1-navbar-nav']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox.moodledemo.net/my/courses.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d27f514-63d2-4a0a-a78f-069476ce0f82",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["css=#course-info-container-2-3 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-2-3']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "321b71f9-a56d-4817-aff7-ebf35b319a10",
+      "comment": "",
+      "command": "click",
+      "target": "name=setmode",
+      "targets": [
+        ["id=656f59194cac9656f5919372a28-editingswitch", "id"],
+        ["name=setmode", "name"],
+        ["css=#\\36 56f59194cac9656f5919372a28-editingswitch", "css:finder"],
+        ["xpath=//input[@id='656f59194cac9656f5919372a28-editingswitch']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82fdf75b-1433-4e27-88d8-401e33ff2455",
+      "comment": "",
+      "command": "click",
+      "target": "css=#coursecontentcollapse0 .activity-add-text",
+      "targets": [
+        ["css=#coursecontentcollapse0 .activity-add-text", "css:finder"],
+        ["xpath=//div[@id='coursecontentcollapse0']/button/span[2]", "xpath:idRelative"],
+        ["xpath=//li/div[2]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Add an activity or resource')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba08a2c0-6506-4fbb-a040-db1e70405d02",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quiz",
+      "targets": [
+        ["css=.option:nth-child(15) .optionname", "css:finder"],
+        ["xpath=//div[@id='all-7']/div/div[15]/div/a/div[2]", "xpath:idRelative"],
+        ["xpath=//div[15]/div/a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac6a75b0-fbf7-477c-9a37-37454bd9940a",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701796129146_248']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "15abc"
+    }, {
+      "id": "baaf7df9-fcfb-4c2b-b81a-ef2eeba1ac20",
+      "comment": "",
+      "command": "click",
+      "target": "id=collapseElement-1",
+      "targets": [
+        ["id=collapseElement-1", "id"],
+        ["linkText=Timing", "linkText"],
+        ["css=#collapseElement-1", "css:finder"],
+        ["xpath=//a[@id='collapseElement-1']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701796129146_1409']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#id_timingcontainer')]", "xpath:href"],
+        ["xpath=//fieldset[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Timing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aef5601a-ad08-455f-8816-72dac8cf25f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fitem_id_timelimit .form-check",
+      "targets": [
+        ["css=#fitem_id_timelimit .form-check", "css:finder"],
+        ["xpath=//div[@id='fitem_id_timelimit']/div[2]/fieldset/div/label", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/fieldset/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41201238-9006-4f6c-990f-a79e2bcde010",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_timelimit_number",
+      "targets": [],
+      "value": "-1"
+    }, {
+      "id": "3077d662-b9ae-4e84-b738-f6237e23c861",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton2",
+      "targets": [
+        ["id=id_submitbutton2", "id"],
+        ["name=submitbutton2", "name"],
+        ["css=#id_submitbutton2", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton2']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701796129146_1431']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0d556a4d-6f97-4290-a83d-bc68125e1d77",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://sandbox.moodledemo.net/"],
+  "plugins": []
+}
